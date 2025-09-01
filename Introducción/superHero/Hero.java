@@ -1,4 +1,11 @@
-
+/**
+ * La clase { Hero } representa a un héroe con atributos básicos
+ * como: Nombre (name), Fuerza (strength) y Salud (health) 
+ * 
+ * Métodos principales
+ * calculatePunchDamage() - Calcula el daño de un golpe normal.
+ * calculateSpecialAttackDamage() - Calcula el daño de un ataque especial en base al tipo.
+ */
 public class Hero {
 
     String name = "Hero";
