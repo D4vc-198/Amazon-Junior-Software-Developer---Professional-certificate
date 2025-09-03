@@ -1,4 +1,6 @@
-# Clases y Objetos en Java
+# CarSimulator
+
+## Clases y Objetos en Java
 
 Este proyecto contiene 2 clases principales:
 1. `Main`
