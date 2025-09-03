@@ -35,7 +35,7 @@ myFirstCar.make = "2020";
 ```
 
 ## Colección de Objetos
-Una `Colección de Objetos` es un conjunto de elementos que comparten una o más características en común. En este caso, en lugar de tener un solo carro, puedes tener muchos. Para eso, se una un `arreglo de objetos`:
+Una `Colección de Objetos` es un conjunto de elementos que comparten una o más características en común. En este caso, en lugar de tener un solo carro, puedes tener muchos. Para eso, se crea un `arreglo de objetos`:
 ```Java
 Car[] cars = new Car[5];
 ```
