@@ -1,4 +1,6 @@
-# Agrupación de métodos en Java
+# Calculadora de IMC (BMI - Body Mass Index)
+
+## Agrupación de métodos en Java
 
 Es la práctica de organizar los métodos dentro de una clase según su función o responsabilidad. En este proyecto, la clase `BMICalculator` tiene dos métodos agrupados bajo la misma temática: calcular el Índice de Masa Corporal (BMI - Body Mass Index).
 
