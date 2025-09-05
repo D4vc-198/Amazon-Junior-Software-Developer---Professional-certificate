@@ -1,16 +1,36 @@
 public class Main {
-    public static void main(String args[]) {
+    public static void main(String[] args) {
+        double weight, height;
+        double bmi = 0;
+        String bmiSystem;
+        String bmiCategory;
+
+        UserInput userInput = new UserInput();
         BMICalculator bmiCalculator = new BMICalculator();
 
-        double weightInPounds = 154.0;
-        double heightInInches = 70.0;
-        double bmiImperial = bmiCalculator.calculateBmiImperial(weightInPounds, heightInInches);
+        bmiSystem = userInput.obtainBMISystem();
 
-        double weightInKilos = 70.0;
-        double heightInMeters = 1.82;
-        double bmiMetric = bmiCalculator.calculateBmiMetric(weightInKilos, heightInMeters);
+        switch (bmiSystem.toUpperCase()) {
+            case "IMPERIAL":
+                weight = userInput.obtainWeight(bmiSystem);
+                height = userInput.obtainHeight(bmiSystem);
+                bmi = bmiCalculator.calculateBmiImperial(weight, height);
+                break;
 
-        System.out.println("BMI in Imperial System: " + bmiImperial);
-        System.out.println("BMI in Metric System: " + bmiMetric);
+            case "METRIC":
+                weight = userInput.obtainWeight(bmiSystem);
+                height = userInput.obtainHeight(bmiSystem);
+                bmi = bmiCalculator.calculateBmiMetric(weight, height);
+                break;
+
+            case "":
+                System.out.println("Please Enter a valid BMI System as input");
+                break;
+        }
+
+        System.out.println("Your BMI is: " + bmi);
+
+        bmiCategory = bmiCalculator.getBMICategory(bmi);
+        System.out.println("Your BMI category is: " + bmiCategory);
     }
 }
