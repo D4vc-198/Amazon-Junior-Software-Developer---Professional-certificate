@@ -11,5 +11,6 @@ Este proyecto contiene 2 clases principales:
 2. `BMICalculator`
     - Método `calculateBmiImperial`: Calcula el Índice de Masa Corporal (BMI). en el sistema imperial
     - Método `calculateBmiMetric`: Calcula el Índice de Masa Corporal (BMI). en el sistema métrico.
+    - Método `getBMICategory`: Retorna la categoria del peso en el que se encuentra.
 
 Ambos métodos están agrupados porque hacen lo mismo (calcular BMI) pero con diferentes sistemas de medida.
