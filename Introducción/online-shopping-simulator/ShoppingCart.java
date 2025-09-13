@@ -1,14 +1,22 @@
 /*
- * Cuando se llama a addItem() para añadir un objeto electrónico o de ropa al carrito de compras
- * el polimorfismo garantiza que se llame a la versión correcta de la informacion de la pantalla en
- * funcion del tipo de objeto real.
+ * La clase ShoppingCart representa un carrito de compras que puede almacenar
+ * distintos tipos de productos. Gracias al polimorfismo, no importa si el objeto
+ * que se agrega es un Electronics o un Clothing: el método adecuado para mostrar
+ * la información del producto se ejecutará en tiempo de ejecución.
  */
 public class ShoppingCart {
     
-    /*
-     * Recibe un parametro de tipo Product (Electronics o Clothing)
-     * Muestra la información del producto pasado por parámetro
-     * y muestra un mensaje adicional indicando que se ha agregado el producto al carrito
+/*
+     * Añade un producto al carrito de compras.
+     * 
+     * Parámetro:
+     *  - item: objeto de tipo Product, que puede ser una instancia de Electronics o Clothing.
+     * 
+     * Funcionamiento:
+     *  - Se llama al método displayInfo() del objeto recibido.
+     *    Debido al polimorfismo, se ejecuta la versión sobrescrita correspondiente
+     *    al tipo real del objeto (ya sea Electronics o Clothing).
+     *  - Luego, se imprime un mensaje indicando que el producto fue agregado al carrito.
      */
     public void addItem(Product item) {
        item.displayInfo();

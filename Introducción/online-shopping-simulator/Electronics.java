@@ -17,7 +17,7 @@ public class Electronics extends Product {
 
 
     /*
-     * Inicializa los atributos heredados name y proce a través del constructor
+     * Inicializa los atributos heredados name y price a través del constructor
      * de la superclase Product,
      * y asigna el valor propio de warrantyPeriodInMonths
      */
