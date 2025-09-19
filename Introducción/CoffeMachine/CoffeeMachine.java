@@ -37,9 +37,9 @@ public class CoffeeMachine {
                     // Crea un objeto Espresso usando la información proporcionada por el usuario
                     Espresso myEspresso = new Espresso(espressoName, espressoRoast, espressoPrice, numberOfShots);
 
-                    myEspresso.grindBeans();
-                    myEspresso.brewCoffee();
-                    myEspresso.printInfo();
+                    // myEspresso.grindBeans();
+                    // myEspresso.brewCoffee();
+                    // myEspresso.printInfo();
 
                     break;
                 case 2:
@@ -70,9 +70,9 @@ public class CoffeeMachine {
 
                     Latte myLatte = new Latte(latteName, latteRoast, lattePrice, milkType, syrupFlavor);
 
-                    myLatte.grindBeans();
-                    myLatte.brewCoffee();
-                    myLatte.printInfo();
+                    // myLatte.grindBeans();
+                    // myLatte.brewCoffee();
+                    // myLatte.printInfo();
 
                     break;
                 case 3:
