@@ -7,6 +7,8 @@ public class CoffeeMachine {
         // Crea el objeto Scanner para leer la entrada
         Scanner keyboard = new Scanner(System.in);
 
+        CoffeeMaker cafeCoffeeMaker = new CoffeeMaker();
+
         while (true) {
             System.out.println("\nWelcome to the Coffee Machine!");
             System.out.println("Select an option to continue:");
@@ -36,10 +38,10 @@ public class CoffeeMachine {
 
                     // Crea un objeto Espresso usando la información proporcionada por el usuario
                     Espresso myEspresso = new Espresso(espressoName, espressoRoast, espressoPrice, numberOfShots);
-
+                    cafeCoffeeMaker.prepareCoffee(myEspresso);
                     // myEspresso.grindBeans();
                     // myEspresso.brewCoffee();
-                    // myEspresso.printInfo();
+                    myEspresso.printInfo();
 
                     break;
                 case 2:
@@ -69,10 +71,11 @@ public class CoffeeMachine {
                     }
 
                     Latte myLatte = new Latte(latteName, latteRoast, lattePrice, milkType, syrupFlavor);
+                    cafeCoffeeMaker.prepareCoffee(myLatte);
 
                     // myLatte.grindBeans();
                     // myLatte.brewCoffee();
-                    // myLatte.printInfo();
+                    myLatte.printInfo();
 
                     break;
                 case 3:
