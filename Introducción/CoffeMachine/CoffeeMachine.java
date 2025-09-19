@@ -4,7 +4,7 @@ public class CoffeeMachine {
 
     public static void main(String[] args) {
 
-        // Create a Scanner object to read input
+        // Crea el objeto Scanner para leer la entrada
         Scanner keyboard = new Scanner(System.in);
 
         while (true) {
@@ -15,63 +15,55 @@ public class CoffeeMachine {
             System.out.println("3. Exit");
             System.out.print("Enter your choice (1, 2, or 3): ");
 
-            // Read user's choice
+            // Lee la elección del usuario
             int choice = keyboard.nextInt();
 
             switch (choice) {
                 case 1:
-                    // Initialize the name of Espresso
+                    // Inicializa el nombre del Espresso
                     String espressoName = "Espresso";
 
-                    // Initialize the price of Espresso per serving
+                    // Inicializa el precio del Espresso por porción
                     double espressoPrice = 2.50;
 
-                    // Ask the user for the type of roast and store it in espressoRoast
+                    // Le pregunta al usuario el tipo de tueste y lo almacena en espressoRoast
                     System.out.print("What Roast would you like? (light, medium, dark): ");
                     String espressoRoast = keyboard.next();
 
-                    // Ask the user for the number of shots and store it in numberOfShots
+                    // Le pregunta al usuario el número de porciones y lo almacena en numberOfShots
                     System.out.print("How many servings would you like? (a number please): ");
                     int numberOfShots = keyboard.nextInt();
 
-                    // TODO 8: Create an object of Espresso class using the parameterized constructor
-                    // TODO 8: Pass the espressoName, espressoRoast, espressoPrice, and numberOfShots as arguments in the correct order
+                    // Crea un objeto Espresso usando la información proporcionada por el usuario
                     Espresso myEspresso = new Espresso(espressoName, espressoRoast, espressoPrice, numberOfShots);
 
-                    // TODO 9: Call the grindBeans() method on the Espresso object
                     myEspresso.grindBeans();
-                    // TODO 10: Call the brewCoffee() method on the Espresso object
                     myEspresso.brewCoffee();
-
-                    // TODO 11: Call the printInfo() method on the Espresso object
                     myEspresso.printInfo();
-
-                    // TODO 12: Call the printEspressoDetails method on the Espresso object
                     myEspresso.printEspressoDetails();
 
                     break;
                 case 2:
-
-                    // Initialize the name of Latte
+                    // Inicializa el nombre del Latte
                     String latteName = "Latte";
 
-                    // Initialize the price of Latte
+                    // Inicializa el precio del Latte
                     double lattePrice = 3.50;
 
-                    // Ask the user for the type of roast and store it in latteRoast
+                    // Le pregunta al usuario el tipo de tueste y lo almacena en latteRoast
                     System.out.print("What Roast would you like? (light, medium, dark): ");
                     String latteRoast = keyboard.next();
 
-                    // Ask the user for the milk type and store it in milkType
+                    // Le pregunta al usuario el tipo de leche y lo almacena en milkType
                     System.out.print("What milk type would you like? (whole, skim, almond, oat): ");
                     String milkType = keyboard.next();
 
-                    // Ask the user if they want syrup or not
+                    // Le pregunta al usuario si quiere jarabe o no
                     System.out.print("Would you like syrup? (yes/ no): ");
                     String syrupWanted = keyboard.next();
 
                     String syrupFlavor = "no";
-                    // if syrupWanted is yes, Ask the user for the syrup flavor and store it in syrupFlavor
+                    // Si syrupWanted es "yes", pregunta al usuario por el sabor del jarabe y lo almacena en syrupFlavor
                     if(syrupWanted.equals("yes")){
                         System.out.print("Which flavor would you like? (vanilla, caramel, hazelnut): ");
                         syrupFlavor = keyboard.next();
