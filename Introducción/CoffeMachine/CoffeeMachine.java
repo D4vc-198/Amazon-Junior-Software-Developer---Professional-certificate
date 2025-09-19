@@ -40,7 +40,6 @@ public class CoffeeMachine {
                     myEspresso.grindBeans();
                     myEspresso.brewCoffee();
                     myEspresso.printInfo();
-                    myEspresso.printEspressoDetails();
 
                     break;
                 case 2:
