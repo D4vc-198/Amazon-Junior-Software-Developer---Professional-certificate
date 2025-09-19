@@ -73,7 +73,6 @@ public class CoffeeMachine {
                     myLatte.grindBeans();
                     myLatte.brewCoffee();
                     myLatte.printInfo();
-                    myLatte.printLatteDetails();
 
                     break;
                 case 3:
