@@ -1,22 +1,22 @@
 public class Coffee {
 
-    // Attributes to store information about the coffee
-    String name;                // for example, "Espresso", "Latte", "Mocha"
-    String roast;               // for example, "light", "medium", "dark"
-    int caffeineLevelInMg;      // calculated based on the roast
-    double price;               // in dollars, for example, 2.50
+    // Atributos para almacenar información sobre el café
+    String name;                // Por ejemplo, "Espresso", "Latte", "Mocha"
+    String roast;               // Por ejemplo, "light", "medium", "dark"
+    int caffeineLevelInMg;      // Calculado basado en el tipo de tueste
+    double price;               // En dolares, por ejemplo, 2.50
 
-    // Constructor to create a new coffee object with the given information
+    // Constructor para crear un nuevo objeto de café con la información dada
     public Coffee(String name, String roast, double price) {
         this.name = name;
         this.roast = roast;
         this.price = price;
 
-        // The constructor calls the method to set the caffeine level based on the roast
+        // El constructor llama al método para establecer el nivel de cafeína basado en el tueste
         setCaffeineLevel();
     }
 
-    // Method to set the caffeine level of the coffee based on the roast
+    // Metodo para establecer el nivel de cafeína del café basado en el tueste
     public void setCaffeineLevel() {
         if (roast.equals("light")) {
             caffeineLevelInMg = 50;
@@ -29,16 +29,17 @@ public class Coffee {
         }
     }
 
-    // Methods to simulate coffee preparation
+    // Metodo para simular la molienda de los granos de café
     public void grindBeans() {
         System.out.println("\nGrinding beans for " + name + "...");
     }
 
+    // Metodo para simular la preparación del café
     public void brewCoffee() {
         System.out.println("\nBrewing your favorite " + name + "...");
     }
 
-    // Method to print the information about the coffee
+    // Metodo para imprimir la información del café
     public void printInfo() {
         System.out.println("\nYou ordered a " + name + " with a " + roast + " roast.");
         System.out.println("The caffeine level in your coffee is " + caffeineLevelInMg + " mg.");
