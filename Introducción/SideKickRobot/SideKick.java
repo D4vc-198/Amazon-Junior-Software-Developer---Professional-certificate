@@ -1,38 +1,30 @@
 import java.util.Scanner;
 
 public class SideKick {
-    /**
-     * Object of Scanner class to input values from the user
-     **/
+
     Scanner keyboard;
-   
+
     private int modeOfOperation;
 
-    /** charge of battery **/
     int batteryCharge;
 
     /** Constructor **/
     public SideKick() {
         keyboard = new Scanner(System.in);
 
-        // initial charge of battery is 0
+        // la carga inicial de la bateria es 0
         batteryCharge = 0;
 
-        // set default to cleaning or 1
+        // establecer el valor predeterminado en limpieza o 1
         modeOfOperation = 1;
     }
 
-    /*
-     * code for battery recharge from previous VIDEO Item :
-     * "Introduction to Encapsulation and data hiding"
-     */
-
-    /* Getter method */
+    // Método getter para obtener el valor de batteryCharge
     public int getBatteryCharge() {
         return batteryCharge;
     }
 
-    /* Setter method */
+    // Método setter para establecer el valor de batteryCharge
     public void setBatteryCharge(int batteryCharge) {
         this.batteryCharge = batteryCharge;
     }
@@ -54,13 +46,11 @@ public class SideKick {
         System.out.println("The battery charge is at :" + batteryCharge + " %.");
     }
 
-    // accessor/getter method for modeOfOperation
     // Metodo getter para obtener el valor de modeOfOperation
     public int getModeOfOperation() {
         return modeOfOperation;
     }
 
-    // mutator/setter method for modeOfOperation
     // Metodo setter para establecer el valor de modeOfOperation
     public void setModeOfOperation(int modeOfOperation) {
         if (modeOfOperation < 1 || modeOfOperation > 3) {
@@ -69,7 +59,8 @@ public class SideKick {
             this.modeOfOperation = modeOfOperation;
     }
 
-    // method to set choice
+    // Muestra el menú y establece el modo de operación según la elección del
+    // usuario
     public void setChoice() {
         System.out.println("***** SideKick Menu *****");
         System.out.println("1. Cleaning");
@@ -81,7 +72,7 @@ public class SideKick {
         modeOfOperation = choice;
     }
 
-    // method to take action
+    // Método para realizar la acción según el modo de operación
     public void takeAction() {
         switch (modeOfOperation) {
             case 1:
@@ -101,8 +92,7 @@ public class SideKick {
         }
     }
 
-
-    // method to clean
+    // Método para limpiar
     private void cleanHouse() {
         System.out.println("Get the vacuum cleaner.....");
         System.out.println("Put the dust bag in vacuum.....");
@@ -114,7 +104,7 @@ public class SideKick {
         System.out.println("Go back to Toni.....");
     }
 
-    // method to cook
+    // Método para cocinar
     private void cookFood() {
         System.out.println("Move to the kitchen.....");
         System.out.println("Get the vegetables.....");
