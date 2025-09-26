@@ -1,6 +1,10 @@
 
 # Ejercicio: Robot sidekick
 
+## Actualización - Clases Abstractas
+
+Se refactorizó el código creando una clase abstracta `Robot` para mejorar la flexibilidad mantenimiento del mismo. 
+
 ## Encapsulación y ocultación de datos
 
 El objetivo de este proyecto, es proteger las propiedades y los métodos de la clase `SideKick` mediante la encapsulación, esto garantizará operaciones y valores seguros y validados.
