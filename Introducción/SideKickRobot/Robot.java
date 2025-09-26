@@ -59,4 +59,6 @@ public abstract class Robot {
         System.out.println("The battery charge is at :" + batteryCharge + " %.");
     }
 
+    abstract public void setChoice();
+    abstract public void  takeAction();
 }

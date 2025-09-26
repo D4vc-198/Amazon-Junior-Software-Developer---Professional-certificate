@@ -9,5 +9,9 @@ public class Main {
 
         driverBot.rechargeBattery();
         driverBot.displayBatteryLevel();
+        driverBot.setChoice();
+        driverBot.takeAction();
+    
+
     }
 }
