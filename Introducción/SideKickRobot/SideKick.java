@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SideKick {
+public class SideKick extends Robot{
 
     Scanner keyboard;
 
@@ -20,12 +20,12 @@ public class SideKick {
 
         System.out.println("Enter choice(1-3):");
         int choice = keyboard.nextInt();
-        modeOfOperation = choice;
+        setModeOfOperation(choice);
     }
 
     // Método para realizar la acción según el modo de operación
     public void takeAction() {
-        switch (modeOfOperation) {
+        switch (getModeOfOperation()) {
             case 1:
                 cleanHouse();
                 System.out.println("SideKick cleaning completed.");
