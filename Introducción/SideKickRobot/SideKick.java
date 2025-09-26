@@ -5,8 +5,7 @@ public class SideKick {
     Scanner keyboard;
 
     private int modeOfOperation;
-
-    int batteryCharge;
+    private int batteryCharge;
 
     /** Constructor **/
     public SideKick() {
@@ -14,9 +13,22 @@ public class SideKick {
 
         // la carga inicial de la bateria es 0
         batteryCharge = 0;
-
         // establecer el valor predeterminado en limpieza o 1
         modeOfOperation = 1;
+    }
+
+    // Metodo accessor/getter para obtener el valor de modeOfOperation
+    public int getModeOfOperation() {
+        return modeOfOperation;
+    }
+
+    // Metodo mutator/setter para establecer el valor de modeOfOperation
+    public void setModeOfOperation(int modeOfOperation) {
+        if (modeOfOperation >= 1 && modeOfOperation <= 3) {
+            this.modeOfOperation = modeOfOperation;
+        } else {
+            this.modeOfOperation = 1;
+        }
     }
 
     // Método getter para obtener el valor de batteryCharge
@@ -44,19 +56,6 @@ public class SideKick {
 
     public void displayBatteryLevel() {
         System.out.println("The battery charge is at :" + batteryCharge + " %.");
-    }
-
-    // Metodo getter para obtener el valor de modeOfOperation
-    public int getModeOfOperation() {
-        return modeOfOperation;
-    }
-
-    // Metodo setter para establecer el valor de modeOfOperation
-    public void setModeOfOperation(int modeOfOperation) {
-        if (modeOfOperation < 1 || modeOfOperation > 3) {
-            this.modeOfOperation = 1;
-        } else
-            this.modeOfOperation = modeOfOperation;
     }
 
     // Muestra el menú y establece el modo de operación según la elección del
