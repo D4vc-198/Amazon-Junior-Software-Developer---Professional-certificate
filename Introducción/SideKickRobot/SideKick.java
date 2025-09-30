@@ -12,6 +12,7 @@ public class SideKick extends Robot{
 
     // Muestra el menú y establece el modo de operación según la elección del
     // usuario
+    @Override
     public void setChoice() {
         System.out.println("***** SideKick Menu *****");
         System.out.println("1. Cleaning");
@@ -24,6 +25,7 @@ public class SideKick extends Robot{
     }
 
     // Método para realizar la acción según el modo de operación
+    @Override
     public void takeAction() {
         switch (getModeOfOperation()) {
             case 1:
