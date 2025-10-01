@@ -1,4 +1,4 @@
-public class Tiger extends Animal {
+public class Tiger extends Animal implements Walk{
     private int numberOfStripes;
     private int speed;
     private double soundLevel;
@@ -33,5 +33,19 @@ public class Tiger extends Animal {
 
     public void setSoundLevel(double soundLevel) {
         soundLevel = this.soundLevel;
+    }
+
+    // Implementamos el metodo eatingCompleted de la interfaz Eat
+    // que ha sido heredada por Animal
+    @Override
+    public void eatingCompleted() {
+        System.out.println("Tiger: I have eaten meat");
+    }
+
+    
+    // Implementamos el metodo walking de la interfaz Walk
+    @Override
+    public void walking() {
+        System.out.println("I'm walking at speed " + speed + " mph");
     }
 }
