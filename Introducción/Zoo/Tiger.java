@@ -1,4 +1,4 @@
-public class Tiger extends Animal implements Walk{
+public class Tiger extends Animal implements Walk {
     private int numberOfStripes;
     private int speed;
     private double soundLevel;
@@ -7,32 +7,49 @@ public class Tiger extends Animal implements Walk{
         super.setNameOfAnimal("Tiger");
     }
 
+    // GET
     // Métodos getter/setter para numberOfStripes
     public int getnumberOfStripes() {
         return numberOfStripes;
     }
 
+    // SET
     public void setnumberOfStripes(int numberOfStripes) {
-        numberOfStripes = this.numberOfStripes;
+        if (numberOfStripes < 0) {
+            this.numberOfStripes = 0;
+        } else {
+            this.numberOfStripes = numberOfStripes;
+        }
     }
 
+    // GET
     // Métodos getter/setter para speed
     public int getSpeed() {
         return speed;
     }
 
+    // SET
     public void setSpeed(int speed) {
-        speed = this.speed;
+        if (speed < 0) {
+            this.speed = 0;
+        } else {
+            this.speed = speed;
+        }
     }
 
-
+    // GET
     // Métodos getter/setter para soundLevel
     public double getSoundLevel() {
         return soundLevel;
     }
 
+    // SET
     public void setSoundLevel(double soundLevel) {
-        soundLevel = this.soundLevel;
+        if (soundLevel < 0) {
+            this.soundLevel = 0;
+        } else {
+            this.soundLevel = soundLevel;
+        }
     }
 
     // Implementamos el metodo eatingCompleted de la interfaz Eat
@@ -42,7 +59,6 @@ public class Tiger extends Animal implements Walk{
         System.out.println("Tiger: I have eaten meat");
     }
 
-    
     // Implementamos el metodo walking de la interfaz Walk
     @Override
     public void walking() {
