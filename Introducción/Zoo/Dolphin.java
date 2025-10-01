@@ -29,4 +29,17 @@ public class Dolphin extends Animal {
         swimmingSpeed = this.swimmingSpeed;
     }
 
+    
+    @Override
+    public void eatingFood() {
+        System.out.println("Dolphin: I'm eating a delicious fish.");
+    }
+
+    // Implementamos el metodo eatingCompleted de la interfaz Eat
+    // que ha sido heredada por Animal
+    @Override
+    public void eatingCompleted() {
+        System.out.println("Dolphin: I have eaten fish.");
+    }
+
 }
