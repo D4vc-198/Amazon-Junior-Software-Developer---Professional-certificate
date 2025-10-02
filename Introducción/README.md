@@ -22,10 +22,12 @@ A lo largo del curso, se adquirieron conocimientos sobre los conceptos básicos 
     - Conceptos de encapsulamiento, herencia y polimorfismo.
     - Creación de clases abstractas e interfaces para estructurar el código de manera efectiva.
 
-<!--
+
 ### Módulo 4: Proyecto final y evaluación
 - **Objetivo:** Aplicar todos los conocimientos adquiridos en un proyecto práctico.
 - **Contenido:**
     - Desarrollo de un programa que simula un zoológico, utilizando clases como `Animal`, `Tiger`, `Dolphin`, y `Penguin`.
     - Implementación de interfaces y métodos abstractos para definir comportamientos específicos.
-    - Evaluación del proyecto basado en la correcta implementación de herencia, funcionalidad y cohesión del programa. -->
+    - Evaluación del proyecto basado en la correcta implementación de herencia, funcionalidad y cohesión del programa.
+
+## [Proyecto Final 🗀 ](./Zoo/)
