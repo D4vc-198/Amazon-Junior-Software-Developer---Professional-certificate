@@ -29,5 +29,10 @@ A lo largo del curso, se adquirieron conocimientos sobre los conceptos básicos 
     - Desarrollo de un programa que simula un zoológico, utilizando clases como `Animal`, `Tiger`, `Dolphin`, y `Penguin`.
     - Implementación de interfaces y métodos abstractos para definir comportamientos específicos.
     - Evaluación del proyecto basado en la correcta implementación de herencia, funcionalidad y cohesión del programa.
+- [Proyecto Final 🗀 ](./Zoo/)
 
-## [Proyecto Final 🗀 ](./Zoo/)
+
+| 📜 Certificado |
+|-------------|
+| <img src="https://github.com/user-attachments/assets/bb49ae51-1332-4a45-aaf0-31920e6ed6aa" alt="Certificado" width="500"/> 
+
