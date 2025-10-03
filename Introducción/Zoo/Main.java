@@ -222,13 +222,11 @@ public class Main {
                                 System.out.print("Is Swimming (Enter true for yes/ false for no): ");
                                 penguinObject.setIsIswimming(keyboard.nextBoolean());
 
-                                if (penguinObject.getIsSwimming()) {
-                                    System.out.print("Enter swimming speed: ");
-                                    penguinObject.setSwimSpeed(keyboard.nextInt());
-                                } else {
-                                    System.out.print("Enter walk speed: ");
-                                    penguinObject.setWalkSpeed(keyboard.nextInt());
-                                }
+                                System.out.print("Enter swimming speed: ");
+                                penguinObject.setSwimSpeed(keyboard.nextInt());
+                                
+                                System.out.print("Enter walk speed: ");
+                                penguinObject.setWalkSpeed(keyboard.nextInt());
                                 break;
                             case 2:
                                 System.out.println("Weight: " + penguinObject.getWeight());

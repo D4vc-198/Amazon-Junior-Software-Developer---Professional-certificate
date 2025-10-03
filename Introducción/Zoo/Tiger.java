@@ -4,7 +4,7 @@ public class Tiger extends Animal implements Walk {
     private double soundLevel;
 
     public Tiger() {
-        super.setNameOfAnimal("Tiger");
+        super("Tiger");
     }
 
     // GET

@@ -8,7 +8,7 @@ public class Dolphin extends Animal implements Swim {
      * y poner Dolphin por defecto
      */
     public Dolphin() {
-        super.setNameOfAnimal("Dolphin");
+        super("Dolphin");
     }
 
     // Métodos getter/setter para color

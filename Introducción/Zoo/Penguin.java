@@ -4,7 +4,7 @@ public class Penguin extends Animal implements Walk, Swim {
     private int swimSpeed;
 
     public Penguin() {
-        super.setNameOfAnimal("Penguin");
+        super("Penguin");
     }
 
     // Método GET para isSwimming
